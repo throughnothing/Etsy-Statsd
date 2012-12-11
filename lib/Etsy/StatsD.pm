@@ -58,7 +58,7 @@ sub increment {
 	$self->update( $stats, 1, $sample_rate );
 }
 
-=item increment(STATS, SAMPLE_RATE)
+=item decrement(STATS, SAMPLE_RATE)
 
 Decrement one of more stats counters.
 
@@ -69,7 +69,7 @@ sub decrement {
 	$self->update( $stats, -1, $sample_rate );
 }
 
-=item increment(STATS, DELTA, SAMPLE_RATE)
+=item update(STATS, DELTA, SAMPLE_RATE)
 
 Update one of more stats counters by arbitrary amounts.
 
